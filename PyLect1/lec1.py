@@ -100,3 +100,146 @@
 # print(a)
 
 # Логические операции
+# >, >=, <, <=, ==, !=
+# not, and, or - не путать с &, |, 
+# is, is not, in, not in
+# gen
+
+# a = 1 < 3 and 5 > 2
+# print(a)
+
+# a = 'qwe'
+# b = 'qwe'
+# print(a == b)
+
+# a = [1, 2]
+# b = [1,2]
+# print(a == b)
+
+# a = 1 < 3 < 5
+# print(a)
+
+# func = 1
+# T = 4
+# x = 2
+# print(func<T>(x))
+
+# f = 1 > 2 or 4<6
+# print(f)
+
+# f = [1, 2, 3, 4]
+# print (f)
+# print(2 in f)
+
+# f = [1, 2, 3, 4]
+# print (f)
+# print(not 2 in f)
+
+# is_odd = f[0] % 2 == 0
+# print(is_odd)
+
+# f = [1, 2, 3, 4]
+# is_odd = not f[0] % 2
+# print(is_odd)
+
+# Управляющие конструкции 
+# if, if-else
+
+# a = int(input('a = '))
+# b = int(input('b = '))
+# if a > b:
+#     print(a)
+# else:
+#     print(b)
+
+# # Логический оператор if, elif, else
+# username = input ('Введите имя:')
+# if username == 'Маша':
+#     print('Ура, это же Маша!')
+# elif username == 'Марина':
+#     print('Я так ждала Вас, Марина!')
+# elif username == 'Ильнар':
+#     print('Ильнар - топ!')
+# else:
+#     print('Привет, ', username)
+
+# Управляющие контсрукции цикл While и for
+#  Цикл While:
+
+# original = 23
+# inverted = 0
+# while original !=0:
+#     inverted = inverted * 10 + (original % 10)
+#     original //=10
+# print(inverted)
+
+#  Цикл While вместе с else:
+# original = 23 
+# inverted = 0
+# while original !=0:
+#     inverted = inverted * 10 + (original % 10)
+#     original //=10
+#     print(original)
+# else:
+#     print('Пожалуй')
+#     print('хватит')
+# print(inverted)
+
+#  Цикл for:
+# for i in enumeration:
+# где i - переменная (счетчик), in - ключевое слово, enumeration - итерируемый объект (список) 
+
+# for i in 1,2,3,4,5:
+#     print(i**2)
+
+# list = [1,2,3,4,10,5]
+# for i in list:
+#     print(i)
+
+# r = range(10)
+# for i in r:
+#     print(i)
+
+# for i in range(5):
+#     print(i)
+
+# for i in range(1, 5):
+#     print(i)
+
+# for i in range(1, 10 , 2):
+#     print(i)
+
+# for i in 'qwerty':
+#     print(i)
+
+# Строки
+# Базовые API для работы со строками:
+
+# text = 'съешь ещё этих мягких французских булок'
+
+# print(len(text))                   # 39    - определение количества символов в строке
+# print('ещё' in text)               # True  - проверка наличия подстроки в строке оператор  - in
+# print(text.isdigit())              # False - проверка все ли символы в строке числа
+# print(text.islower())              # True  - проверка все ли символы в строке символы нижнего регистра
+# print(text.replace('ещё', 'ЕЩЁ'))  #       - что-то на что-то заменить
+
+# for c in text:
+#     print(c)
+
+
+# # Срезы:
+# text = 'съешь ещё этих мягких французских булок'
+# print(text[0])                          # с
+# print(text[1])                          # ъ
+# #print(text[len(text)])                  # IndexError
+# print(text[len(text)-1])                # к
+# print(text[-5])                         # б
+# print(text[:])                          # print(text)  
+# print(text[:2])                         # съ
+# print(text[len(text)-2:])               # ок
+# print(text[2:9])                        # ешь ещё
+# print(text[6:-18])                      # ещё этих мягких
+# print(text[0:len(text):6])              # сеикакл
+# print(text[::6])                        # сеикакл
+# text = text[2:9] + text[-5] + text[:2]  # ...
+

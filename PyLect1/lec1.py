@@ -243,3 +243,63 @@
 # print(text[::6])                        # сеикакл
 # text = text[2:9] + text[-5] + text[:2]  # ...
 
+#  Списки
+numbers = [1,2,3,4,5]
+# print(numbers)                             #   [1, 2, 3, 4, 5]
+
+# numbers = list(range(1, 6))
+# print(numbers)                             #  [1, 2, 3, 4, 5]
+
+# ran = range(1, 6)                           #  приведениетипа range в тип list
+# numbers = list(ran)                        #  приведение типа range --> list
+# print(numbers)
+
+
+# numbers[0] = 10
+# print(numbers)                             #  [10, 2, 3, 4, 5]
+
+# numbers[0] = 10
+# print(f'len(numbers) len')                 #  получить количество элементов списка   результат -> 5 len
+
+
+# for i in numbers:
+#     i *=2
+#     print(i)                               #  [20, 4, 6, 8, 10]
+# print(numbers)                             # [10, 2, 3, 4, 5]
+
+# colors = ['red', 'green', 'blue']
+# for e in color:
+#     print(e)                                     # red green blue
+
+# for e in colors:
+#     print(e*2)                                   # redred greengreen blueblue
+
+# colors.append('gray')                              # добавить в конец gray
+# print(colors)
+
+# print(colors == ['red', 'green', 'blue', 'gray'])  # True
+
+# colors.remove('red') # del colors[0] тоже самое  # удалить нулевой элемент
+# del colors[0]                                    # удалить нулевой элемент
+# print(colors)
+
+#  Функции в языке Python
+
+# def function_name(x):     # где def - ключевое слово функции, function_name - имя функции, (x - аргументы):
+    # body line 1         #  тело метода
+    #...
+    # body line n
+    # optional return     #  может добавляться оператор возвращения значения
+
+def f(x):
+    if x == 1:
+        return 'Целое'
+    elif x ==2.3:
+        return 23
+    else:
+        return
+arg = 2
+print(f(arg))
+print(type(f(arg)))
+
+
